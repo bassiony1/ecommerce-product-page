@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+ 
+</head>
+<body>
+  
+  <div class="asider">
+    <i class="fa-sharp fa-solid fa-xmark"></i>
+    <ul class="nav-links">
+      <li class="nav-link"><a href="#">Collections</a></li>
+      <li class="nav-link"><a href="#">Men</a></li>
+      <li class="nav-link"><a href="#">Women</a></li>
+      <li class="nav-link"><a href="#">About</a></li>
+      <li class="nav-link"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="overlay-preview">
+    <div class="overlay-hero-preview">
+      <img src="images/image-product-1.jpg" alt="">
+      <img class="overlay-img2" src="images/image-product-2.jpg" alt="">
+      <img class="overlay-img3" src="images/image-product-3.jpg" alt="">
+      <img class="overlay-img4" src="images/image-product-4.jpg" alt="">
+
+      <i class="fa-solid fa-angle-right overlay-next"></i>
+      <i class="fa-solid fa-angle-left overlay-prev"></i>
+    </div>
+    <div class="overlay-preview-thums">
+      <div class="overlay-img-thum img-active"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+      <div class="overlay-img-thum"><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+      <div class="overlay-img-thum"><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
+      <div class="overlay-img-thum"><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <div class="container">
+    <nav class="nav">
+      <div class="menu-bar"><i class="fa-sharp fa-solid fa-bars"></i></div>
+      <div class="logo">
+        <h1>Sneakers</h1>
+    </div>
+      <div class="nav-info">
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#">Collections</a></li>
+        <li class="nav-link"><a href="#">Men</a></li>
+        <li class="nav-link"><a href="#">Women</a></li>
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-data">
+      <div class="cart-icon" data-items="">
+        <i class="fa-solid fa-cart-shopping "></i>
+      </div>
+      <div class="prof-img">
+        <img src="images/image-avatar.png" alt="">
+      </div>
+    </div>
+    <div class="cart">
+      <div class="cart-header">
+        <h3 class="cart-title">Cart</h3>
+      </div>
+      
+      <div class="cart-content">
+        <p class="empty-cart">Your Cart is Empty</p>
+        <div class="media-group">
+          <div class="cart-prod-img"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="product"><p class="prod-name">Fall Limited Edition Sneakers</p>
+            <div class="prod-price"><span class="orginal-price">$125.00 x </span><span class="prod-count"></span><span class="total-price"></span></div>
+          </div>
+
+          <i class="fa-solid fa-trash trash-btn"></i>
+        </div>
+        <a href="#" class="btn">Checkout</a>
+      </div>
+    </div>
+    </nav>
+    
+    <div class="content">
+      <div class="preview">
+        <div class="hero-preview">
+          <img src="images/image-product-1.jpg" alt="">
+          <img class="img2" src="images/image-product-2.jpg" alt="">
+          <img class="img3" src="images/image-product-3.jpg" alt="">
+          <img class="img4" src="images/image-product-4.jpg" alt="">
+
+          <i class="fa-solid fa-angle-right s-next"></i>
+          <i class="fa-solid fa-angle-left s-prev"></i>
+        </div>
+        <div class="preview-thums">
+          <div class="img-thum img-active"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="img-thum"><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+          <div class="img-thum"><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
+          <div class="img-thum"><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="content-data">
+        <h4 class="company-name">Sneaker Company</h4>
+        <h1 class="title">Fall Limited Edition Sneakers</h1>
+        <p class="prod-desc">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="new-price">
+            <div class="price">$125.00</div>
+            <div class="discount-badge">50%</div>
+          </div>
+          <div class="old-price"><del>$250.00</del></div>
+          <div class="prod-control">
+            <div class="qun-control">
+              <i class="fa-solid fa-minus minus"></i>
+              <div class="num">0</div>
+              <i class="fa-solid fa-plus plus"></i>
+            </div>
+            <a class="add-btn">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+ 
+</body>
+</html>
+
+
+
+
